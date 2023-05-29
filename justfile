@@ -1,2 +1,2 @@
 run *args:
-  yarn tsx index.ts {{args}}
+  yarn --silent tsx index.ts {{args}}

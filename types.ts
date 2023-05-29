@@ -1,3 +1,5 @@
+// bitwarden -------------------------------------------------------------------
+
 export interface BitwardenItem {
   object: string;
   id: string;
@@ -11,7 +13,7 @@ export interface BitwardenItem {
   fields: BitwardenField[];
   login: BitwardenLogin;
   collectionIds: unknown[];
-  attachments: BitwardenAttachment[];
+  attachments?: BitwardenAttachment[];
   revisionDate: string; // ISO
   creationDate: string; // ISO
   deletedDate: string | null;
@@ -41,4 +43,29 @@ export interface BitwardenAttachment {
   size: string; // bytes as a string
   sizeName: string; // display name for bytes
   url: string;
+}
+
+// arguments -------------------------------------------------------------------
+
+export interface Arg {
+  long: string;
+  short?: string;
+}
+
+export interface CliArgs {
+  outdir: string;
+  debug: boolean;
+  verbose: boolean;
+  overwrite: boolean,
+  parallelDownloads: number;
+}
+
+// internal --------------------------------------------------------------------
+
+export interface Attachment {
+  id: string;
+  url: string;
+  fileName: string;
+  size: number;
+  parent: BitwardenItem;
 }
