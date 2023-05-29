@@ -22,3 +22,6 @@ $ yarn tsx --help
 # run bitport
 $ yarn tsx index.ts path/to/vault/export # ...and any extra options here (see help output)
 ```
+
+**Warning: this exports all your Bitwarden data _in plain text!_ That means it's unencrypted!**.
+When you use this to make a backup, you should obviously encrypt your backup with the same or stronger encryption than what Bitwarden itself uses! This is out of scope for this tool, which just exports the Bitwarden data.
