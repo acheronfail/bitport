@@ -1,0 +1,9 @@
+{
+  "name": "bitport",
+  "type": "module",
+  "dependencies": {
+    "@types/node": "^20.2.5",
+    "execa": "^7.1.1",
+    "tsx": "^3.12.7"
+  }
+}
