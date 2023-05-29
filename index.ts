@@ -224,6 +224,8 @@ Usage:
   script [OPTIONS] <${OPT_OUTDIR}>
 
 Options:
+  --${OPT_DEBUG.long}, -${OPT_DEBUG.short}                             enable debug output (also enables verbose output)
+  --${OPT_VERBOSE.long}, -${OPT_VERBOSE.short}                           enable verbose output
   --${OPT_OVERWRITE.long}, -${OPT_OVERWRITE.short}                         should existing files be overwritten; defaults to no
   --${OPT_DOWNLOADS.long}, -${OPT_DOWNLOADS.short} <number>       how many attachments to download at once; defaults to 5
 
